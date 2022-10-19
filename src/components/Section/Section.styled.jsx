@@ -6,4 +6,5 @@ export const SectionBox = styled.section`
   border: 1px solid black;
   border-radius: 4px;
   margin: 30px 0 15px 30px;
+  background-color: #999999;
 `;
