@@ -5,6 +5,6 @@ export const SectionBox = styled.section`
   width: 350px;
   border: 1px solid black;
   border-radius: 4px;
-  margin: 30px 0 15px 30px;
+  margin: 30px auto 15px auto;
   background-color: #999999;
 `;
