@@ -14,6 +14,7 @@ class App extends Component {
       { id: 'id-3', name: 'Eden Clements', number: '645-17-79' },
       { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
     ],
+    filter: '',
   };
 
   handleSubmit = ({ name, number }) => {
@@ -48,7 +49,7 @@ class App extends Component {
   onFilteredContacts = () => {
     const contacts = this.state.contacts;
     return contacts.filter(contact =>
-      contact.name.toLowerCase().trim()
+      contact.name.toLowerCase().trim().includes(this.state.filter)
     );
   };
 
